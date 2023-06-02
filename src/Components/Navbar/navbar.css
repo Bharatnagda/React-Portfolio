@@ -1,0 +1,57 @@
+.n-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+   
+}
+.n-name{
+    color: orange;
+}
+.n-left{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 2rem;
+}
+.n-name{
+  
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.n-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-weight: 500;
+}
+.n-list{
+    flex: 10;
+    
+}
+.n-list>ul{
+    display: flex;
+    gap: 1rem;
+    margin-right: 4rem;
+}
+
+
+.n-list ul li{
+    
+    margin: 15px;
+}
+.n-list ul li:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px)  {
+    .n-list{
+        display: none;
+    }
+    .n-button{
+        display: none;
+    }
+    
+  }

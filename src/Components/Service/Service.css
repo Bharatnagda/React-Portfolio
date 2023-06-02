@@ -1,0 +1,61 @@
+.service{
+    display: flex;
+    height: 90vh;
+    margin-top: 10rem;
+   padding: 0 3rem 0 3rem;
+   margin-bottom: 5rem;
+}
+.left-service{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+}
+.left-service>:nth-child(1)
+{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.left-service>:nth-child(2)
+{
+    color: orange;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.left-service>:nth-child(3)
+{
+    margin-top: 1rem;
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+}
+.s-button{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 1.5rem;
+}
+.right-service{
+    position: relative;
+}
+.right-service>*{
+    position: absolute;
+}
+
+@media screen and (max-width:480px){
+    .service{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 75rem;
+        
+    }
+    .right-service{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+    .right-service>*{
+        position: static;
+    }
+}
